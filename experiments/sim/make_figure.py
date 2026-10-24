@@ -13,6 +13,7 @@ import numpy as np
 
 src = Path(sys.argv[1] if len(sys.argv) > 1 else "experiments/results/predicate_multiseed.json")
 out_stem = Path(sys.argv[2] if len(sys.argv) > 2 else "figures/fig_predicate_v2")
+out_stem.parent.mkdir(parents=True, exist_ok=True)
 d = json.loads(src.read_text())
 rho = np.array(d["rho"])
 agg = d["aggregate"]

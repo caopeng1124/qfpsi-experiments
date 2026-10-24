@@ -8,6 +8,33 @@ Vectors via Calibrated Quantized Token Matching** 的全部实验代码、测量
 
 ---
 
+## 0. 审稿人快速开始（Reviewer quick start）
+
+```bash
+git clone https://github.com/caopeng1124/qfpsi-experiments.git
+cd qfpsi-experiments
+python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+brew install libsodium          # Debian/Ubuntu: sudo apt install libsodium23
+./run_all.sh                    # ~5 分钟：跑全部 11 组实验并自检
+```
+
+`run_all.sh` 依次执行 E1–E11，把结果写到 `experiments/results_quick/`（**不会覆盖**
+已发表的 `experiments/results/`），日志写到 `logs/`，图写到 `figures/`，最后用
+`scripts/check_results.py` 把结果与论文引用的数值逐条比对。成功时输出：
+
+```
+   all 23 checks passed
+   STATUS:   PASS
+```
+
+- 完整复现（5 个种子、原样本量，约 20 分钟）：`./run_all.sh --full`
+- 真实数据实验（E7）：`./scripts/get_data.sh` 下载 SIFT1M（525 MB，支持断点续传）后再跑
+- 每台机器的硬件/版本、每步耗时、预期输出、以及"哪个实验支撑论文哪句话"，见
+  **[`docs/ARTIFACT.md`](docs/ARTIFACT.md)**
+- 也可以在 GitHub Actions 的 `quick-check` 工作流里直接看最近一次的运行日志与产物
+
+---
+
 ## 1. 快速开始
 
 ```bash

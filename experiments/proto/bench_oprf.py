@@ -7,6 +7,7 @@ and measures per-scalar-multiplication and per-token costs.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import statistics
 import sys
@@ -49,6 +50,9 @@ def bench(fn, n):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default="experiments/results/oprf_bench.json")
+    args = ap.parse_args()
     out = {"libsodium": "1.0.22 / ristretto255"}
     k = rs.scalar_random()
     token = b"token-0123456789"
@@ -107,9 +111,9 @@ def main():
     print(f"offline index build extrapolated: N=1e4 -> {out['offline']['N1e4_T128_s']:.0f} s, "
           f"N=1e5 -> {out['offline']['N1e5_T128_s']:.0f} s (single thread)")
 
-    Path("experiments/results/oprf_bench.json").parent.mkdir(parents=True, exist_ok=True)
-    Path("experiments/results/oprf_bench.json").write_text(json.dumps(out, indent=1))
-    print("\nwrote experiments/results/oprf_bench.json")
+    Path(args.out).parent.mkdir(parents=True, exist_ok=True)
+    Path(args.out).write_text(json.dumps(out, indent=1))
+    print(f"\nwrote {args.out}")
 
 
 if __name__ == "__main__":

@@ -10,6 +10,7 @@ import numpy as np
 
 src = Path(sys.argv[1] if len(sys.argv) > 1 else "experiments/results/transfer.json")
 out = Path(sys.argv[2] if len(sys.argv) > 2 else "figures/fig_transfer_v2")
+out.parent.mkdir(parents=True, exist_ok=True)
 d = json.loads(src.read_text())
 rho = np.array(d["rho"])
 
