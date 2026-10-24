@@ -1,0 +1,56 @@
+{
+ "n": 5000,
+ "q": 32,
+ "calib": 20,
+ "build_s": 39.56397366593592,
+ "theta": 69,
+ "t_B": {
+  "1": 72,
+  "2": 61,
+  "4": 9
+ },
+ "results": {
+  "fixed1": {
+   "queries": 32,
+   "latency_median_ms": 128.9768959977664,
+   "tpr": 1.0,
+   "fpr": 0.9375,
+   "recovered": 0.96875,
+   "false_pos_mean": 0.0,
+   "labels_mean": 0.96875,
+   "bytes_sent": 16449.0,
+   "bytes_recv": 21393.0,
+   "B_hist": {
+    "1": 32
+   }
+  },
+  "fixed2": {
+   "queries": 32,
+   "latency_median_ms": 120.82297948654741,
+   "tpr": 1.0,
+   "fpr": 1.0,
+   "recovered": 1.0,
+   "false_pos_mean": 0.03125,
+   "labels_mean": 1.03125,
+   "bytes_sent": 16449.0,
+   "bytes_recv": 19653.0,
+   "B_hist": {
+    "2": 32
+   }
+  },
+  "adaptive": {
+   "queries": 32,
+   "latency_median_ms": 121.36002094484866,
+   "tpr": 1.0,
+   "fpr": 1.0,
+   "recovered": 1.0,
+   "false_pos_mean": 0.03125,
+   "labels_mean": 1.03125,
+   "bytes_sent": 16449.0,
+   "bytes_recv": 19653.0,
+   "B_hist": {
+    "2": 32
+   }
+  }
+ }
+}

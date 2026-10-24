@@ -1,0 +1,32 @@
+{
+ "n": 10000,
+ "T": 128,
+ "queries": 100,
+ "workers": 8,
+ "index": {
+  "entries": 1280000,
+  "build_s": 12.579387916950509,
+  "sort_s": 0.6077507089357823,
+  "bytes": 78080000,
+  "packed_per_entry": 61
+ },
+ "latency_ms": {
+  "median": 18.2037289487198,
+  "mean": 18.177943794289604,
+  "p95": 18.75758299138397,
+  "min": 17.658833065070212,
+  "max": 19.18187504634261
+ },
+ "bytes": {
+  "sent_median": 8202.0,
+  "recv_median": 5784.0,
+  "total_median": 13986.0
+ },
+ "hits_median": 80,
+ "components": {
+  "oprf_request": 4100,
+  "oprf_evaluation": 4100,
+  "tag_request": 4100,
+  "payloads_per_hit": 21
+ }
+}

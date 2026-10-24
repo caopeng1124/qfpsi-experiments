@@ -1,0 +1,177 @@
+{
+ "N": 10000,
+ "Q": 100,
+ "D": 128,
+ "T": 128,
+ "w": 2,
+ "B_fine": 2,
+ "t_fine": 61,
+ "tau": 0.85,
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "rows": [
+  {
+   "mode": "iid",
+   "tc": 40,
+   "cand_ratio": 0.16076233333333334,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 1.1366666666666667,
+   "wrong_per_query": 0.14666666666666667,
+   "empty_rate": 0.006666666666666667
+  },
+  {
+   "mode": "iid",
+   "tc": 48,
+   "cand_ratio": 0.026483666666666666,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 1.1366666666666667,
+   "wrong_per_query": 0.14666666666666667,
+   "empty_rate": 0.006666666666666667
+  },
+  {
+   "mode": "iid",
+   "tc": 56,
+   "cand_ratio": 0.002372,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 1.1366666666666667,
+   "wrong_per_query": 0.14666666666666667,
+   "empty_rate": 0.006666666666666667
+  },
+  {
+   "mode": "iid",
+   "tc": 64,
+   "cand_ratio": 0.0002066666666666667,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 1.1166666666666667,
+   "wrong_per_query": 0.12666666666666668,
+   "empty_rate": 0.006666666666666667
+  },
+  {
+   "mode": "iid",
+   "tc": 72,
+   "cand_ratio": 0.00010066666666666667,
+   "planted_in_cand": 0.9700000000000001,
+   "eta_hit": 1.0,
+   "labels_per_query": 0.9866666666666667,
+   "wrong_per_query": 0.016666666666666666,
+   "empty_rate": 0.03
+  },
+  {
+   "mode": "iid",
+   "tc": 80,
+   "cand_ratio": 7.966666666666667e-05,
+   "planted_in_cand": 0.7966666666666665,
+   "eta_hit": 1.0,
+   "labels_per_query": 0.7966666666666665,
+   "wrong_per_query": 0.0,
+   "empty_rate": 0.20333333333333337
+  },
+  {
+   "mode": "iid",
+   "tc": 88,
+   "cand_ratio": 4.9666666666666684e-05,
+   "planted_in_cand": 0.49666666666666665,
+   "eta_hit": 1.0,
+   "labels_per_query": 0.49666666666666665,
+   "wrong_per_query": 0.0,
+   "empty_rate": 0.5033333333333333
+  },
+  {
+   "mode": "iid",
+   "tc": 96,
+   "cand_ratio": 1.7000000000000003e-05,
+   "planted_in_cand": 0.17,
+   "eta_hit": 1.0,
+   "labels_per_query": 0.17,
+   "wrong_per_query": 0.0,
+   "empty_rate": 0.8300000000000001
+  },
+  {
+   "mode": "clustered",
+   "tc": 40,
+   "cand_ratio": 0.163994,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 26.683333333333337,
+   "wrong_per_query": 25.69333333333333,
+   "empty_rate": 0.0
+  },
+  {
+   "mode": "clustered",
+   "tc": 48,
+   "cand_ratio": 0.031083,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 26.683333333333337,
+   "wrong_per_query": 25.69333333333333,
+   "empty_rate": 0.0
+  },
+  {
+   "mode": "clustered",
+   "tc": 56,
+   "cand_ratio": 0.007104666666666666,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 26.683333333333337,
+   "wrong_per_query": 25.69333333333333,
+   "empty_rate": 0.0
+  },
+  {
+   "mode": "clustered",
+   "tc": 64,
+   "cand_ratio": 0.004188666666666667,
+   "planted_in_cand": 1.0,
+   "eta_hit": 1.0,
+   "labels_per_query": 26.639999999999997,
+   "wrong_per_query": 25.650000000000002,
+   "empty_rate": 0.0
+  },
+  {
+   "mode": "clustered",
+   "tc": 72,
+   "cand_ratio": 0.0026753333333333334,
+   "planted_in_cand": 0.9700000000000001,
+   "eta_hit": 1.0,
+   "labels_per_query": 23.153333333333336,
+   "wrong_per_query": 22.183333333333337,
+   "empty_rate": 0.0
+  },
+  {
+   "mode": "clustered",
+   "tc": 80,
+   "cand_ratio": 0.001193,
+   "planted_in_cand": 0.7966666666666665,
+   "eta_hit": 1.0,
+   "labels_per_query": 11.733333333333334,
+   "wrong_per_query": 10.936666666666667,
+   "empty_rate": 0.0
+  },
+  {
+   "mode": "clustered",
+   "tc": 88,
+   "cand_ratio": 0.000332,
+   "planted_in_cand": 0.49666666666666665,
+   "eta_hit": 1.0,
+   "labels_per_query": 3.3200000000000003,
+   "wrong_per_query": 2.823333333333333,
+   "empty_rate": 0.08333333333333333
+  },
+  {
+   "mode": "clustered",
+   "tc": 96,
+   "cand_ratio": 5.066666666666667e-05,
+   "planted_in_cand": 0.17,
+   "eta_hit": 1.0,
+   "labels_per_query": 0.5066666666666667,
+   "wrong_per_query": 0.33666666666666667,
+   "empty_rate": 0.6333333333333333
+  }
+ ]
+}

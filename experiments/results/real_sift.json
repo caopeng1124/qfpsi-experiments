@@ -1,0 +1,55 @@
+{
+ "dataset": "SIFT1M (ANN-Benchmarks)",
+ "D": 128,
+ "B": 2,
+ "w": 2,
+ "T": 128,
+ "queries": 800,
+ "rows": [
+  {
+   "seed": 1,
+   "tau": 0.8054897119995569,
+   "cos_close_mean": 0.8651231179002871,
+   "cos_far_mean": -0.015069735243734788,
+   "overlap_close": 81.3098,
+   "overlap_near": 68.83462789965361,
+   "overlap_far": 55.130850047755494,
+   "t_far1": 78,
+   "fmr_far": 0.009763345006898015,
+   "fnmr_close": 0.39305,
+   "release_near": 0.1583394562821455,
+   "dprime_far": 2.178717407708369,
+   "dprime_near": 1.2064406269807522
+  },
+  {
+   "seed": 2,
+   "tau": 0.8054897119995572,
+   "cos_close_mean": 0.8651231179002871,
+   "cos_far_mean": -0.015069735243734788,
+   "overlap_close": 80.7873,
+   "overlap_near": 68.86800671774955,
+   "overlap_far": 55.05964130319431,
+   "t_far1": 79,
+   "fmr_far": 0.008383741908097209,
+   "fnmr_close": 0.44075,
+   "release_near": 0.14574367586858403,
+   "dprime_far": 2.0786747906891994,
+   "dprime_near": 1.1156886887940778
+  },
+  {
+   "seed": 3,
+   "tau": 0.8054897119995572,
+   "cos_close_mean": 0.8651231179002871,
+   "cos_far_mean": -0.015069735243734794,
+   "overlap_close": 81.28175,
+   "overlap_near": 68.68998635457122,
+   "overlap_far": 54.58909052318794,
+   "t_far1": 78,
+   "fmr_far": 0.009975591637482755,
+   "fnmr_close": 0.3904,
+   "release_near": 0.15513802876036528,
+   "dprime_far": 2.2421494942570566,
+   "dprime_near": 1.2397127669920405
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "libsodium": "1.0.22 / ristretto255",
+ "correct": true,
+ "tag_len": 32,
+ "point_valid": false,
+ "scalarmult": {
+  "median_ms": 0.032459,
+  "mean_ms": 0.032472105599999995,
+  "p95_ms": 0.036708,
+  "n": 20000
+ },
+ "h1_from_hash": {
+  "median_ms": 0.010333,
+  "mean_ms": 0.0108654813,
+  "p95_ms": 0.013167,
+  "n": 20000
+ },
+ "blind": {
+  "median_ms": 0.045167,
+  "mean_ms": 0.0458468884,
+  "p95_ms": 0.050583,
+  "n": 5000
+ },
+ "server_eval": {
+  "median_ms": 0.032625,
+  "mean_ms": 0.03308899405,
+  "p95_ms": 0.036375,
+  "n": 20000
+ },
+ "server_direct": {
+  "median_ms": 0.044042,
+  "mean_ms": 0.044380703199999996,
+  "p95_ms": 0.048292,
+  "n": 5000
+ },
+ "online_token": {
+  "median_ms": 0.130334,
+  "mean_ms": 0.13197635766666668,
+  "p95_ms": 0.143,
+  "n": 3000
+ },
+ "per_query": {
+  "Tq": 128,
+  "client_ms": 8.309504,
+  "server_ms": 4.154752,
+  "measured_online_token_ms": 16.682752
+ },
+ "offline": {
+  "per_token_ms": 0.044042,
+  "N1e4_T128_s": 56.37376,
+  "N1e5_T128_s": 563.7375999999999
+ }
+}

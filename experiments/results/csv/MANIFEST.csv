@@ -1,0 +1,98 @@
+0.file,MANIFEST.json
+0.csv,MANIFEST.csv
+0.rows,1
+0.bytes,2994
+0.sha256,a75c67d2c12b
+0.script,(unrecorded)
+0.measures,
+1.file,ablations.json
+1.csv,ablations.csv
+1.rows,18
+1.bytes,5421
+1.sha256,2425e37152e8
+1.script,run_ablations.py
+1.measures,"Boundary expansion r, token count T, dimensionality D (calibration and test sets disjoint)"
+2.file,adaptive_proto.json
+2.csv,adaptive_proto.csv
+2.rows,3
+2.bytes,968
+2.sha256,dc39b092db35
+2.script,proto/adaptive_proto.py
+2.measures,"Executed Adaptive-B: coarse feedback, calibrated width policy, three fine indexes"
+3.file,boundary.json
+3.csv,boundary.csv
+3.rows,13
+3.bytes,12858
+3.sha256,a9add7bb1c42
+3.script,run_boundary.py
+3.measures,Separation of genuine (0.85) from near-miss (0.80/0.82) pairs; 13 configs
+4.file,oprf_bench.json
+4.csv,oprf_bench.csv
+4.rows,1
+4.bytes,998
+4.sha256,bb3c6e5b327f
+4.script,proto/bench_oprf.py
+4.measures,"Ristretto255 OPRF microbenchmark: scalar mult, blind, evaluate, unblind"
+5.file,predicate_multiseed.json
+5.csv,predicate_multiseed.csv
+5.rows,1
+5.bytes,16508
+5.sha256,aa11a6131561
+5.script,run_multiseed.py
+5.measures,"Token overlap vs cosine similarity; 12 (B,w) configs, 5 rotations"
+6.file,proto.json
+6.csv,proto.csv
+6.rows,1
+6.bytes,600
+6.sha256,2adc1a6ecfbb
+6.script,proto/qfpsi_proto.py
+6.measures,"Fixed-B prototype, N=1000, loopback"
+7.file,proto_10k.json
+7.csv,proto_10k.csv
+7.rows,1
+7.bytes,604
+7.sha256,a900dfbf186f
+7.script,proto/qfpsi_proto.py
+7.measures,"Fixed-B prototype, N=10000, loopback"
+8.file,proto_lan.json
+8.csv,proto_lan.csv
+8.rows,1
+8.bytes,676
+8.sha256,3314998684ff
+8.script,proto/qfpsi_proto.py
+8.measures,Fixed-B prototype under emulated fast LAN
+9.file,proto_wan.json
+9.csv,proto_wan.csv
+9.rows,1
+9.bytes,678
+9.sha256,240c268abcdd
+9.script,proto/qfpsi_proto.py
+9.measures,Fixed-B prototype under emulated slow WAN
+10.file,selectivity.json
+10.csv,selectivity.csv
+10.rows,8
+10.bytes,8737
+10.sha256,39723e92904d
+10.script,run_selectivity.py
+10.measures,"Accuracy vs selectivity trade-off (token space, bucket size, near-miss rate)"
+11.file,transfer.json
+11.csv,transfer.csv
+11.rows,1
+11.bytes,1987
+11.sha256,e5819e8d73ff
+11.script,run_transfer.py
+11.measures,Release probability vs cosine for thresholds calibrated at 99% recall
+12.file,twostage.json
+12.csv,twostage.csv
+12.rows,16
+12.bytes,4022
+12.sha256,3aeb8e5a6181
+12.script,run_twostage.py
+12.measures,"Count-only simulation of the two-stage protocol over t_c, i.i.d. and clustered databases"
+13.file,twostage_proto.json
+13.csv,twostage_proto.csv
+13.rows,2
+13.bytes,958
+13.sha256,428726557150
+13.script,proto/twostage_proto.py
+13.measures,"Executed two-stage protocol: OPRF, packed indexes, Shamir 61-of-128, reconstruction"

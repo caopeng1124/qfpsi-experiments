@@ -1,0 +1,43 @@
+{
+ "n": 10000,
+ "q": 40,
+ "T": 128,
+ "D": 128,
+ "t_c": 56,
+ "t_B": 61,
+ "shares_s": 1.816391083993949,
+ "results": {
+  "iid": {
+   "queries": 40,
+   "build_s": 27.223290333990008,
+   "size_mib": 109.86328125,
+   "latency_median_ms": 205.36900003207847,
+   "latency_p95_ms": 211.57708298414946,
+   "cand_mean": 24.375,
+   "labels_mean": 1.15,
+   "wrong_mean": 0.0,
+   "false_pos_mean": 0.175,
+   "empty_rate": 0.025,
+   "planted_recovered": 0.975,
+   "bytes_sent": 16502.0,
+   "bytes_recv": 33273.0,
+   "coarse_fanout": 319924.5
+  },
+  "clustered": {
+   "queries": 40,
+   "build_s": 28.306451666983776,
+   "size_mib": 109.86328125,
+   "latency_median_ms": 260.27647900627926,
+   "latency_p95_ms": 286.20883298572153,
+   "cand_mean": 70.575,
+   "labels_mean": 26.05,
+   "wrong_mean": 0.0,
+   "false_pos_mean": 25.075,
+   "empty_rate": 0.0,
+   "planted_recovered": 0.975,
+   "bytes_sent": 16690.0,
+   "bytes_recv": 95106.0,
+   "coarse_fanout": 321839.5
+  }
+ }
+}
