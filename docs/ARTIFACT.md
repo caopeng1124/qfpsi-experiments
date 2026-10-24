@@ -46,8 +46,12 @@ finishes with `scripts/check_results.py`, which asserts the stored results
 against the values quoted in the paper. A correct run ends with:
 
 ```
-   all 22 checks passed
+   all 22 checks passed (2 skipped)
+   STATUS:   PASS
 ```
+
+The two skipped checks are the real-data ones (E7); they run once
+`scripts/get_data.sh` has fetched SIFT1M.
 
 Real data (experiment E7) is optional and skipped unless the HDF5 file is
 present:

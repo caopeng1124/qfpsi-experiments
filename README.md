@@ -1,5 +1,8 @@
 # QFPSI 实验代码与数据（Experiments for the QFPSI paper）
 
+[![quick-check](https://github.com/caopeng1124/qfpsi-experiments/actions/workflows/quickcheck.yml/badge.svg)](https://github.com/caopeng1124/qfpsi-experiments/actions/workflows/quickcheck.yml)
+`quick-check` 每次推送都会在干净的 Ubuntu 机器上跑一遍全部实验并逐条核对论文数值。
+
 本仓库包含论文 **QFPSI: Fuzzy Private Set Intersection for High-Dimensional
 Vectors via Calibrated Quantized Token Matching** 的全部实验代码、测量脚本、
 原始结果与数据包。所有数字都由这里的脚本产生，没有手工抄写。
