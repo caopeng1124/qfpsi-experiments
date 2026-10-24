@@ -33,6 +33,7 @@ matplotlib 3.11、h5py 3.16、libsodium 1.0.22。
 
 ```
 experiments/
+├── pilot/                   # 最早的可行性验证（单种子，已被 sim/ 取代）
 ├── sim/                     # 精度层（纯 numpy，不需要密码学）
 │   ├── qfpsi_sim.py         # 构造：归一化→随机旋转→B-bit 量化→窗口令牌→重叠
 │   ├── run_multiseed.py     # E1 令牌重叠 vs 相似度（5 个旋转种子）
